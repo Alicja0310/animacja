@@ -1,0 +1,42 @@
+.obrazek {
+    width: 400px;
+    height: 250px;
+    border: 2px solid black;
+    padding: 10px;
+    
+}
+
+@keyframes powiekszanie {
+from {
+    width: 400px;
+    height: 250px;
+    border: 2px solid black;
+    padding: 10px;
+}
+to {
+    width: 75px;
+    height: 50px;
+
+}
+}
+
+.obrazek:hover{
+    animation-name: powiekszanie;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+
+.box {
+    width: 500px;
+    height: 250px;
+    box-sizing: border-box;
+    position: relative;
+}
+ img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+img:hover {
+    transform: scale(1.5);
+}

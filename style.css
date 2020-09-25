@@ -27,16 +27,26 @@ to {
 }
 
 .box {
+    overflow: hidden;
     width: 500px;
     height: 250px;
     box-sizing: border-box;
-    position: relative;
 }
  img {
     height: 100%;
     width: 100%;
-    position: absolute;
+    animation-fill-mode: forwards;
 }
 img:hover {
-    transform: scale(1.5);
+    animation-name: przyblizanie;
+    animation-duration: 2000ms;
+}
+@keyframes przyblizanie {
+    from {
+        height: 100%;
+        width: 100%;
+    }
+    to {
+        transform: scale(1.5);
+    }
 }
